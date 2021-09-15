@@ -1,0 +1,10 @@
+<div class="content">
+<div class="list">
+<app-list-pokemon [results]="results"
+                   (selected)="pokemon=$event"></app-list-pokemon>
+    
+</div> 
+<div class="preview">
+    <app-pokemon-preview [pokemon]="pokemon"></app-pokemon-preview>
+</div>
+</div>

@@ -1,0 +1,26 @@
+<div class="search-bar">
+    <app-search-pokeman (search)="name=$event"></app-search-pokeman>
+    
+  </div> 
+<div>
+    <mat-toolbar>
+
+        Pokemons List
+         </mat-toolbar>
+         
+         <mat-sidenav-container>
+             <mat-sidenav>
+             </mat-sidenav>
+             <mat-sidenav-content>
+             <div>
+             <button *ngFor="let result of results | filter:name" mat-button class="menu-button"
+              >
+                 <span mat-menu-item (click)="selectedPokemon(result.name)">
+                     {{result.name}}
+                 </span> 
+                  
+                 </button>
+                 </div>
+             </mat-sidenav-content>
+         </mat-sidenav-container>
+</div>

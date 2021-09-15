@@ -1,0 +1,20 @@
+ .content {
+    display: grid;
+    grid-template-areas: "list preview";
+    grid-template-columns: 45% 70%;
+    grid-column-gap: 0.5em;
+    /* height: 100%; */
+    
+ }
+
+.list{
+    grid-area: list;
+    border-right-style: solid;
+    border-right-color: #7c89a1;
+    border-right-width: 3px;
+
+} 
+
+.preview {
+    grid-area: preview;
+}
